@@ -26,29 +26,24 @@ Visit the live website here: (https://learnify-hub.netlify.app)
 - [Bootstrap 5](https://getbootstrap.com/) (via CDN)  
 - Netlify (for deployment)
 
-````markdown
 ## How to Use
 
 To run this project locally:
-
+````markdown
 1. **Clone the repository**:
-
-   ```bash
    git clone https://github.com/your-username/learnify-hub.git
 ````
 
 2. **Navigate into the folder**:
-
-   ```bash
+   
    cd learnify-hub
    ```
 
-3. **Open the project**:
+4. **Open the project**:
 
    * Open `index.html` directly in your browser
    * Or use the **Live Server** extension in VS Code for better experience
 
-```
 **Owner**:
 Developed and maintained by Amna Mohsin
 For inquiries or collaborations, feel free to connect via LinkedIn(https://www.linkedin.com/in/amna-m98/) or email.
