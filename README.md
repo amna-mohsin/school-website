@@ -56,7 +56,7 @@ To run this project locally on your machine:
 
 ## Owner
 
-Developed and maintained by **Amna Mohsin**
-For collaborations or inquiries, connect on [LinkedIn](https://www.linkedin.com/in/amna-m98/)
+* Developed and maintained by **Amna Mohsin**
+* For collaborations or inquiries, connect on [LinkedIn](https://www.linkedin.com/in/amna-m98/)
 
 ---
