@@ -1,10 +1,14 @@
+
+````markdown
 # Learnify Hub – School Website
 
 **Learnify Hub** is a fully responsive and modern school website developed using only HTML and CSS. It is designed to serve as the front-end for an educational institution, showcasing key sections such as About, Faculty, Achievements, News, and Contact.
 
 ## 🔗 Live Site
 
-Visit the live website here: (https://learnify-hub.netlify.app)
+Visit the live website here: [https://learnify-hub.netlify.app](https://learnify-hub.netlify.app)
+
+---
 
 ## Features
 
@@ -26,26 +30,37 @@ Visit the live website here: (https://learnify-hub.netlify.app)
 - [Bootstrap 5](https://getbootstrap.com/) (via CDN)  
 - Netlify (for deployment)
 
+---
+
 ## How to Use
 
 To run this project locally:
-````markdown
+
 1. **Clone the repository**:
+
+   ```bash
    git clone https://github.com/your-username/learnify-hub.git
 ````
 
-2. **Navigate into the folder**:
-   
+2. **Navigate into the project folder**:
+
+   ```bash
    cd learnify-hub
    ```
 
-4. **Open the project**:
+3. **Open the project**:
 
-   * Open `index.html` directly in your browser
-   * Or use the **Live Server** extension in VS Code for better experience
+   * Open `index.html` directly in your browser, **or**
+   * Use a local server like **Live Server** in VS Code for a better development experience
 
-**Owner**:
-Developed and maintained by Amna Mohsin
-For inquiries or collaborations, feel free to connect via LinkedIn(https://www.linkedin.com/in/amna-m98/) or email.
+---
 
+##  Owner
 
+Developed and maintained by **Amna Mohsin**
+ For inquiries or collaborations, connect on [LinkedIn](https://www.linkedin.com/in/amna-m98/)
+
+```
+
+Let me know if you'd like to add badges, screenshots, or future improvement plans.
+```
