@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Learnify Hub</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background: linear-gradient(120deg, #e6e6fa, #fce1ff);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .form-container {
+      max-width: 450px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 35px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-tabs .nav-link.active {
+      background-color: #c6afe9;
+      color: #000;
+      border-color: #c6afe9;
+    }
+
+    .nav-tabs .nav-link {
+      color: #5a2f8d;
+      font-weight: 600;
+    }
+
+    .form-control:focus {
+      box-shadow: none;
+      border-color: #a56de2;
+    }
+
+    .btn-login {
+      background-color: #c6afe9;
+      color: #000;
+      border: none;
+      border-radius: 25px;
+    }
+
+    .btn-login:hover {
+      background-color: #b197d4;
+    }
+
+    .form-title {
+      font-weight: bold;
+      font-size: 24px;
+      color: #5a2f8d;
+    }
+    @media (max-width: 576px) {
+      .form-container {
+        margin: 30px 15px;
+      }
+    }
+  </style>
+  <!-- Navigation Tab -->
+  <nav class="navbar navbar-expand-lg container-nav fixed-top p-2 px-5">
+    <a class="navbar-brand text- fw-bold text-white" href="#">Learnify Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active pill text-dark" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="index.html#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="admission.html">Admission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="index.html#news">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="index.html#achievements">Achievements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="contact.html">Contact Us</a>
+        </li>
+        <a class="btn btn-primary" href="Login_Signup.html" role="button">Login/Signup</a>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="form-container bg-white">
+    <ul class="nav nav-tabs nav-justified mb-4" id="formTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active pill" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button"
+          role="tab">Login</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link pill" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button"
+          role="tab">Signup</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="formTabsContent">
+      <!-- Login Tab -->
+      <div class="tab-pane fade show active" id="login" role="tabpanel">
+        <form>
+          <h2 class="form-title mb-4 text-center">Welcome Back</h2>
+          <div class="mb-3">
+            <label>Email address</label>
+            <input type="email" class="form-control" placeholder="Enter email" required />
+          </div>
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" placeholder="Enter password" required />
+          </div>
+          <div class="mb-3 text-end">
+            <a href="#" class="text-decoration-none small">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn btn-login w-100">Login</button>
+        </form>
+      </div>
+
+      <!-- Signup Tab -->
+      <div class="tab-pane fade" id="signup" role="tabpanel">
+        <form>
+          <h2 class="form-title mb-4 text-center">Create Account</h2>
+          <div class="mb-3">
+            <label>Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" required />
+          </div>
+          <div class="mb-3">
+            <label>Email address</label>
+            <input type="email" class="form-control" placeholder="Enter email" required />
+          </div>
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" placeholder="Create password" required />
+          </div>
+          <div class="mb-3">
+            <label>Confirm Password</label>
+            <input type="password" class="form-control" placeholder="Confirm password" required />
+          </div>
+          <button type="submit" class="btn btn-login w-100">Signup</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4 pb-3 mt-5">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Learnify Hub</h5>
+          <p>
+            Empowering young minds through modern education, innovation, and care.
+            Join us in creating future-ready leaders. Our school focuses on holistic
+            development and personalized learning experiences.
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="index.html#about" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="courses.html" class="text-white text-decoration-none">Courses</a></li>
+            <li><a href="admission.html" class="text-white text-decoration-none">Admissions</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Contact</h5>
+          <p><i class="bi bi-envelope-fill me-2"></i>contact@learnifyhub.edu</p>
+          <p><i class="bi bi-telephone-fill me-2"></i>+92 123 456 7890</p>
+          <p><i class="bi bi-geo-alt-fill me-2"></i>Karachi, Pakistan</p>
+        </div>
+      </div>
+
+      <hr class="bg-white">
+
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Learnify Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

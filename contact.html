@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Learnify Hub</title>
+</head>
+
+<body>
+  <style>
+    body {
+      background: linear-gradient(120deg, #e6e6fa, #fce1ff);
+      padding-top: 40px;
+    }
+
+    .contact-container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 900px;
+    }
+  </style>
+  <!-- Navigation Tab -->
+  <nav class="navbar navbar-expand-lg container-nav fixed-top p-2 px-5">
+    <a class="navbar-brand text- fw-bold text-white" href="#">Learnify Hub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active pill text-dark" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="index.html#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="courses.html">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="admission.html">Admission</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="index.html#news">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="index.html#achievements">Achievements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link pill text-dark" href="contact.html">Contact Us</a>
+        </li>
+        <a class="btn btn-primary" href="Login_Signup.html" role="button">Login/Signup</a>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact form -->
+  <div class="container contact-container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <form class="row g-3" action="#" method="POST">
+
+      <div class="col-md-6">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-control" placeholder="Enter your name" required>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Your Email</label>
+        <input type="email" class="form-control" placeholder="example@mail.com" required>
+      </div>
+
+      <div class="col-12">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-primary px-4">Send Message</button>
+      </div>
+
+    </form>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-4 pb-3 mt-5">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Learnify Hub</h5>
+          <p>
+            Empowering young minds through modern education, innovation, and care.
+            Join us in creating future-ready leaders. Our school focuses on holistic
+            development and personalized learning experiences.
+          </p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="index.html#about" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="courses.html" class="text-white text-decoration-none">Courses</a></li>
+            <li><a href="admission.html" class="text-white text-decoration-none">Admissions</a></li>
+            <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Contact</h5>
+          <p><i class="bi bi-envelope-fill me-2"></i>contact@learnifyhub.edu</p>
+          <p><i class="bi bi-telephone-fill me-2"></i>+92 123 456 7890</p>
+          <p><i class="bi bi-geo-alt-fill me-2"></i>Karachi, Pakistan</p>
+        </div>
+      </div>
+
+      <hr class="bg-white">
+
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 Learnify Hub. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

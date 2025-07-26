@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Learnify Hub</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background: linear-gradient(120deg, #e6e6fa, #fce1ff);
+            padding:40px;
+        }
+    </style>
+    <!-- Navigation Tab -->
+    <nav class="navbar navbar-expand-lg container-nav fixed-top p-2 px-5">
+        <a class="navbar-brand text- fw-bold text-white" href="#">Learnify Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active pill text-dark" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link pill text-dark" href="index.html#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link pill text-dark" href="courses.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link pill text-dark" href="admission.html">Admission</a></li>
+                <li class="nav-item"><a class="nav-link pill text-dark" href="index.html#news">News</a></li>
+                <li class="nav-item"><a class="nav-link pill text-dark" href="index.html#achievements">Achievements</a>
+                </li>
+                <li class="nav-item"><a class="nav-link pill text-dark" href="contact.html">Contact Us</a></li>
+                <a class="btn btn-primary" href="Login_Signup.html" role="button">Login/Signup</a>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cards Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Courses</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="Assets/maths.jpg" class="card-img-top" alt="Mathematics Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mathematics</h5>
+                        <p class="card-text">Grade 1-10 | Core Subject</p>
+                        <p class="card-text">Build strong analytical and logical thinking through problem solving and
+                            numbers.</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#mathModal">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="Assets/english.jpg" class="card-img-top" alt="English language">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">English Language</h5>
+                        <p class="card-text">Grade 1-10 | Core Subject</p>
+                        <p class="card-text">Enhance grammar, vocabulary, writing, and communication skills for academic
+                            success.</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#englishModal">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="Assets/Science.png" class="card-img-top" alt="Science Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Science</h5>
+                        <p class="card-text">Grade 1-8 | Core Subject</p>
+                        <p class="card-text">Discover the wonders of the world through experiments and scientific
+                            methods.</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#scienceModal">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="Assets/cs.jpg" class="card-img-top" alt="Comp sci Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Computer Science</h5>
+                        <p class="card-text">Grade 4-10 | STEM</p>
+                        <p class="card-text">Learn coding basics, internet safety, and digital creativity in the modern
+                            world.</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#csModal">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="Assets/robotics.jpg" class="card-img-top" alt="Robotics image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Robotics</h5>
+                        <p class="card-text">Grade 6-10 | STEM</p>
+                        <p class="card-text">Explore the world of robotics through hands-on activities in sensors,
+                            motors, and coding logic.</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#roboticsModal">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="Assets/urdu.jpg" class="card-img-top" alt="Urdu language image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Urdu Language</h5>
+                        <p class="card-text">Grade 1-10 | Language</p>
+                        <p class="card-text">Master reading, writing, and speaking Urdu through stories, poetry, and
+                            conversation skills.</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#urduModal">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="Assets/arabic.png" class="card-img-top" alt="ArabicImage">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Arabic Language</h5>
+                        <p class="card-text">Grade 3-10 | Language</p>
+                        <p class="card-text">Learn Arabic through immersive vocabulary lessons, Quranic reading, and
+                            cultural understanding.</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#arabicModal">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="Assets/islamic.png" class="card-img-top" alt="Islamic studies Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Islamic Studies</h5>
+                        <p class="card-text">Grade 1-10 | Religion</p>
+                        <p class="card-text">Discover Islamic teachings, history, and moral values with a focus on
+                            real-life application.</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#islamicModal">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="Assets/business.png" class="card-img-top" alt="Business Image">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Entrepreneurship Basics</h5>
+                        <p class="card-text">Grade 9-10 | Business</p>
+                        <p class="card-text">Encourage innovation by teaching financial literacy, leadership, and
+                            startup thinking early on.</p>
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#businessModal">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <!-- Mathematics Modal -->
+    <div class="modal fade" id="mathModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mathematics Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Numbers & Operations</li>
+                        <li>Algebra & Geometry</li>
+                        <li>Word Problems</li>
+                        <li>Measurement & Graphs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- English Modal -->
+    <div class="modal fade" id="englishModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">English Language Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Grammar & Vocabulary</li>
+                        <li>Reading Comprehension</li>
+                        <li>Creative Writing</li>
+                        <li>Speaking Skills</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Science Modal -->
+    <div class="modal fade" id="scienceModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Science Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Biology</li>
+                        <li>Chemistry</li>
+                        <li>Physics Concepts</li>
+                        <li>Experiments & Diagrams</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Computer Science Modal -->
+    <div class="modal fade" id="csModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Computer Science Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Basics of Computing</li>
+                        <li>Scratch Programming</li>
+                        <li>Word, Excel, PowerPoint</li>
+                        <li>Safe Internet Use</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Robotics Modal -->
+    <div class="modal fade" id="roboticsModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Robotics Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Introduction to Robots</li>
+                        <li>Sensors & Circuits</li>
+                        <li>Arduino Basics</li>
+                        <li>Mini Projects</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Urdu Modal -->
+    <div class="modal fade" id="urduModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Urdu Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Reading & Writing</li>
+                        <li>Grammar</li>
+                        <li>Essay Writing</li>
+                        <li>Poetry</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Arabic Modal -->
+    <div class="modal fade" id="arabicModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Arabic Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Alphabets & Pronunciation</li>
+                        <li>Basic Grammar</li>
+                        <li>Daily Vocabulary</li>
+                        <li>Short Reading Texts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Islamic Studies Modal -->
+    <div class="modal fade" id="islamicModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Islamic Studies Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Prophet Stories</li>
+                        <li>Prayer & Hadith</li>
+                        <li>Islamic History</li>
+                        <li>Character Building</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Business Modal -->
+    <div class="modal fade" id="businessModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Entrepreneurship Syllabus</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>Intro to Business</li>
+                        <li>Design Thinking</li>
+                        <li>Mini Business Plan</li>
+                        <li>Pitching Ideas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-4 pb-3 mt-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Learnify Hub</h5>
+                    <p>
+                        Empowering young minds through modern education, innovation, and care.
+                        Join us in creating future-ready leaders. Our school focuses on holistic
+                        development and personalized learning experiences.
+                    </p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="index.html#about" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="courses.html" class="text-white text-decoration-none">Courses</a></li>
+                        <li><a href="admission.html" class="text-white text-decoration-none">Admissions</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <p><i class="bi bi-envelope-fill me-2"></i>contact@learnifyhub.edu</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+92 123 456 7890</p>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Karachi, Pakistan</p>
+                </div>
+            </div>
+
+            <hr class="bg-white">
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Learnify Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
